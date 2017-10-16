@@ -1,20 +1,23 @@
 {
   "name": "whylearn",
   "version": "1.0.0",
-  "description": "Why do we learn!",
   "main": "index.js",
+  "repository": "git@github.com:phoomparin/WhyLearn.git",
+  "author": "Phoomparin Mano <work@phoom.in.th>",
   "license": "MIT",
   "dependencies": {
+    "babel-plugin-emotion": "^8.0.6",
     "emotion": "^8.0.6",
-    "next": "^4.0.4",
+    "emotion-server": "^8.0.6",
+    "next": "^4.0.5",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-emotion": "^8.0.6",
     "react-ink": "^6.2.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2"
   },
-  "scripts" : {
-    "dev": "next",
-    "export": "NODE_ENV=prudction next build && next export"
+  "scripts": {
+    "dev": "next"
   }
 }
