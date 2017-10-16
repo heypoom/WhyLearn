@@ -1,0 +1,20 @@
+{
+  "name": "whylearn",
+  "version": "1.0.0",
+  "description": "Why do we learn!",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "emotion": "^8.0.6",
+    "next": "^4.0.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-ink": "^6.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  },
+  "scripts" : {
+    "dev": "next",
+    "export": "NODE_ENV=prudction next build && next export"
+  }
+}
