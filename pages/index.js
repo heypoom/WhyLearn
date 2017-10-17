@@ -5,6 +5,7 @@ import axios from 'axios'
 import Typist from 'react-typist'
 
 import App from '../components/App'
+import Card from '../components/Card'
 
 // prettier-ignore
 import {Page, Tagline, Bold, Character, Title, subjects} from '../components/Landing'
@@ -47,6 +48,12 @@ class Landing extends Component {
   render = () => (
     <div>
       <Fold index={this.state.chara} />
+      <div>
+        <Card
+          title="Developer"
+          url="https://www.w3schools.com/w3images/lights.jpg"
+        />
+      </div>
     </div>
   )
 }
