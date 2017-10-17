@@ -6,6 +6,7 @@
   "author": "Phoomparin Mano <work@phoom.in.th>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-plugin-emotion": "^8.0.6",
     "emotion": "^8.0.6",
     "emotion-server": "^8.0.6",
@@ -15,9 +16,16 @@
     "react-emotion": "^8.0.6",
     "react-ink": "^6.2.0",
     "react-redux": "^5.0.6",
-    "redux": "^3.7.2"
+    "react-typist": "^2.0.1",
+    "react-typist-loop": "^0.0.3",
+    "recompose": "^0.26.0",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
   },
   "scripts": {
     "dev": "next"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1"
   }
 }
