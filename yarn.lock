@@ -3728,10 +3728,6 @@ react-redux@^5.0.6:
     loose-envify "^1.1.0"
     prop-types "^15.5.10"
 
-react-typist-loop@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-typist-loop/-/react-typist-loop-0.0.3.tgz#029bb0a1cdf83a03399c0f45a6acd5a30c02334a"
-
 react-typist@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-typist/-/react-typist-2.0.1.tgz#1f6410586d908e4f31fad7cc0f47329ed1794d17"
