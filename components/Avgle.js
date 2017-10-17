@@ -9,7 +9,7 @@ const Root = styled.div`
   align-items: center;
 `
 
-const BlurImage = styled.img`filter: blur(60px);`
+const BlurImage = styled.img`filter: blur(100px);`
 
 const Title = styled.h1`
   margin: 1em 0;
