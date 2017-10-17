@@ -10,6 +10,11 @@ if (typeof window !== 'undefined') {
   hydrate(window.__NEXT_DATA__.ids)
 }
 
+// @font-face {
+//   font-family: 'FuturaHandwritten';
+//   src: url('/static/FuturaHandwritten.ttf');
+// }
+
 const enhance = lifecycle({
   componentWillMount() {
     // Global styles belongs here.
@@ -28,10 +33,11 @@ const enhance = lifecycle({
 })
 
 // This HoC (Higher-Order Component) allows us to inject Providers into each page.
-const App = Component => enhance(props => (
-  <Provider store={store}>
-    <Component {...props} />
-  </Provider>
-))
+const App = Component =>
+  enhance(props => (
+    <Provider store={store}>
+      <Component {...props} />
+    </Provider>
+  ))
 
 export default App

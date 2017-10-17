@@ -9,6 +9,7 @@ export const Page = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   background: #ffffff;
   min-height: 100vh;
 `
@@ -30,8 +31,7 @@ export const Tagline = styled.h1`
   color: #555;
   font-family: Helvetica Neue;
   font-weight: 300;
-  font-size: 3.9em;
-  margin-top: 3em;
+  font-size: 2.4em;
 
   > .Typist > .Cursor {
     display: inline-block;
@@ -52,9 +52,6 @@ const getChar = index =>
   `/static/${subjects[index] ? subjects[index].image : subjects[0]}.png`
 
 const CharacterImage = styled.img`
-  position: absolute;
-  bottom: 1.5em;
-
   width: 9.5em;
   height: 16.5em;
 `
