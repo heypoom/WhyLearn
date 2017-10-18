@@ -32,11 +32,17 @@ export default class BaseDocument extends Document {
   }
 
   render = () => (
-    <html lang='en'>
+    <html lang="en">
       <Head>
         <title>Skootar Clone</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{__html: this.props.css}} />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+          crossorigin="anonymous"
+        />
       </Head>
       <body>
         <Main />
