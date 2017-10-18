@@ -9,6 +9,9 @@ const Wrapper = styled.div`
 
   box-shadow: 0 1px 1.5px 1px rgba(0, 0, 0, 0.12);
   width: 12em;
+
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
 `
 
 const Image = styled.img`
@@ -18,9 +21,11 @@ const Image = styled.img`
 `
 
 const Text = styled.h1`
+  margin: 0;
   font-family: Helvetica Neue;
   font-size: 1.4em;
   font-weight: 300;
+  padding: 1em 0.5em;
 `
 
 const Card = ({title, url}) => (

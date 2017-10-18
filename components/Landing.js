@@ -48,7 +48,7 @@ export const Bold = styled.strong`
   font-weight: 400;
 `
 
-const getChar = index =>
+export const getChar = index =>
   `/static/${subjects[index] ? subjects[index].image : subjects[0]}.png`
 
 const CharacterImage = styled.img`

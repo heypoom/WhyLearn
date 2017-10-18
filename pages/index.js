@@ -3,12 +3,14 @@ import {keyframes} from 'emotion'
 import styled from 'react-emotion'
 import axios from 'axios'
 import Typist from 'react-typist'
+import {Container, Row, Col} from 'reactstrap'
 
 import App from '../components/App'
 import Card from '../components/Card'
+import Login from '../components/Login'
 
 // prettier-ignore
-import {Page, Tagline, Bold, Character, Title, subjects} from '../components/Landing'
+import {Page, Tagline, Bold, Character, Title, getChar, subjects} from '../components/Landing'
 
 const Logo = styled.h1`
   font-family: Helvetica Neue;
@@ -28,7 +30,7 @@ const Fold = ({index}) => (
   </Page>
 )
 
-class Landing extends Component {
+class Slogan extends Component {
   state = {
     chara: 0
   }
@@ -46,16 +48,22 @@ class Landing extends Component {
   }
 
   render = () => (
-    <div>
-      <Fold index={this.state.chara} />
-      <div>
-        <Card
-          title="Developer"
-          url="https://www.w3schools.com/w3images/lights.jpg"
-        />
-      </div>
-    </div>
+    <Row>
+      {subjects.map(subject => (
+        <Col>
+          <Card title={subject.name} url={`/static/${subject.image}.png`} />
+        </Col>
+      ))}
+    </Row>
   )
 }
+
+/* <Fold index={this.state.chara} /> */
+
+const Landing = () => (
+  <Container>
+    <Login />
+  </Container>
+)
 
 export default App(Landing)

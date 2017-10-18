@@ -18,7 +18,9 @@
     "react-ink": "^6.2.0",
     "react-particles-js": "^2.0.0",
     "react-redux": "^5.0.6",
+    "react-transition-group": "^2.2.1",
     "react-typist": "^2.0.1",
+    "reactstrap": "^4.8.0",
     "recompose": "^0.26.0",
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0"
